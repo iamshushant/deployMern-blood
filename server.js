@@ -35,7 +35,7 @@ app.use("/api/v1/admin", adminRoutes);
 //   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 // });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`server running at port ${PORT}`.bgBlue.white);
